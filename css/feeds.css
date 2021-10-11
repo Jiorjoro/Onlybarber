@@ -1,0 +1,396 @@
+form.creatPost {
+    position: relative;
+    top: 11.5rem;
+    left: 50vw;
+    transform: translate(-50%);
+    width: min(85vw, 30rem);
+    background: var(--cor-2);
+    border: 3px solid var(--cor-9);
+    border-radius: 0.6rem;
+    color: var(--cor-10);
+}
+
+form.creatPost textarea, 
+form.creatPost input {
+    background: var(--cor-12);
+    outline: none;
+    color: var(--cor-10);
+}
+
+form.creatPost textarea {
+    width: 90%;
+    height: 6rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 1rem;
+    margin-top: 0.8rem;
+    border: 1px solid var(--cor-3);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    display: block;
+}
+
+form.creatPost div.erro {
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: end;
+    color: var(--cor-5);
+    font-size: 1.1rem;
+}
+
+form.creatPost div:last-child {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+form.creatPost div label i.feather-paperclip {
+    background: var(--cor-12);
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    margin-right: min(1.5vw, 1rem);
+    border: 1px solid var(--cor-3);
+}
+
+form.creatPost input[type="file"] {
+    display: none;
+}
+
+form.creatPost input[type="submit"] {
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    border: 1px solid var(--cor-11);
+    border-radius: 0.3rem;
+    margin-top: -0.6rem;
+    margin-bottom: 1rem;
+}
+
+div.feedTray {
+    position: relative;
+    top: 13rem;
+    left: 50vw;
+    transform: translate(-50%);
+    width: min(85vw, 30rem);
+    height: auto;
+    /* border: 1px solid red; */
+    padding-bottom: 5rem;
+}
+
+@media (min-width: 800px) {
+    form.creatPost {
+        top: min(17vw, 5rem);
+        left: min(35vw, 16.7rem);
+        transform: unset;
+        width: min(60vw, 35rem);
+    }
+    div.feedTray {
+        top: 7rem;
+        left: min(35vw, 16.7rem);
+        transform: unset;
+        width: min(60vw, 35rem);
+    }
+}
+
+div.feedTray h2 {
+    margin-left: 50%;
+    transform: translate(-50%);
+    color: var(--cor-10);
+    text-align: center;
+    background: var(--cor-2);
+    padding: 1rem;
+    border: 1px solid var(--cor-8);
+}
+
+@media (min-width: 1024px) {
+    form.creatPost,
+    div.feedTray {
+        left: 50vw;
+        transform: translate(-50%);
+        width: min(45vw, 40rem);
+    }
+}
+
+div.feedTray div.post {
+    position: relative;
+    width: 100%;
+    background: var(--cor-2);
+    border: 2px solid var(--cor-9);
+    box-sizing: border-box;
+    margin-bottom: 2.5rem;
+}
+
+div.feedTray div.post .post-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+div.feedTray div.post .post-head a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.feedTray div.post .post-head a img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--cor-8);
+    border-radius: 1.25rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+div.feedTray div.post .post-head a div.nome {
+    max-width: min(42vw, 10rem);
+    margin-left: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--cor-10);
+    font-size: 1.1rem;
+}
+
+div.feedTray div.post .post-head a .feather-check {
+    color: lightblue;
+    margin-left: 0.2rem;
+}
+
+div.feedTray div.post .post-head div.date {
+    color: var(--cor-4);
+    text-align: center;
+    font-size: 0.8rem;
+    margin-right: 0.2rem;
+    width: min(20vw, 5rem);
+}
+
+div.feedTray div.post .post-body {
+    margin: min(5%, 1.5rem);
+    background: var(--cor-12);
+    border: 2px solid var(--cor-9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.feedTray div.post .post-body .texto {
+    width: 85%;
+    color: var(--cor-10);
+    margin: min(5%, 1.5rem);
+    word-break: break-word;
+}
+
+div.feedTray div.post .post-body .texto a {
+    color: lightblue;
+}
+
+div.feedTray div.post div.post-reactions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--cor-4);
+    margin-bottom: 1rem;
+}
+
+div.feedTray div.post div.post-reactions i, 
+div.feedTray div.post div.post-reactions div {
+    cursor: pointer;
+}
+
+div.feedTray div.post div.post-reactions div.like {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+}
+
+div.feedTray div.post div.post-reactions div.like img {
+    margin-top: 0rem;
+}
+
+div.feedTray div.post div.post-reactions div.like span {
+    margin-top: 0.2rem;
+    margin-left: 0.3rem;
+    color: var(--cor-10);
+}
+
+div.feedTray div.post .post-reactions .feather-plus .post-more {
+    display: none;
+}
+
+div.feedTray div.post .post-reactions .feather-plus:hover div.post-more {
+    display: block;
+    position: absolute;
+    transform: translate(-35%);
+    background: var(--cor-2);
+    padding: 0.5rem;
+    border: 1px solid var(--cor-7);
+    z-index: 1;
+    font-size: 1rem;
+    color: var(--cor-10);
+}
+
+div.feedTray div.post .post-reactions .feather-plus:hover div.post-more div {
+    cursor: pointer;
+}
+
+div.feedTray div.post .post-reactions .feather-plus:hover div.post-more div:first-child {
+    padding-bottom: 0.5rem;
+}
+
+div.feedTray div.post .post-reactions .feather-plus:hover div.post-more div:last-child {
+    padding-top: 0.5rem;
+}
+
+div.feedTray div.post div.post-reactions i.feather-alert-triangle {
+    color: var(--cor-1);
+    background: var(--cor-5);
+    padding: 0.1em 0.2em 0.2em 0.2em;
+    border-radius: 0.3em;
+}
+
+div.feedTray div.post div.post-reactions i.feather-message-square span {
+    margin-left: 0.3rem;
+    color: var(--cor-10);
+}
+
+div.feedTray div.post div.post-reactions i.feather-alert-triangle span {
+    display: none;
+}
+
+@media (min-width: 1366px) {
+    div.feedTray div.post div.post-reactions i.feather-alert-triangle span {
+        display: inline;
+    }
+}
+
+div.feedTray div.post div.post-comments {
+    margin: 1rem;
+    margin-top: 0rem;
+    background: var(--cor-12);
+    border: 2px solid var(--cor-9);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 15rem;
+}
+
+div.feedTray div.post div.post-comments .comment {    
+    width: 100%;
+    /* height: 4rem; */
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--cor-8);
+}
+
+div.feedTray div.post .post-comments .comment .comment-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+div.feedTray div.post .post-comments .comment .comment-head a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.feedTray div.post .post-comments .comment .comment-head a img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid var(--cor-8);
+    border-radius: 0.75rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+div.feedTray div.post .post-comments .comment .comment-head a div.nome {
+    width: min(85%, 10rem);
+    height: 1rem;
+    margin-left: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--cor-10);
+    font-size: 0.9rem;
+}
+
+div.feedTray div.post .post-comments .comment .comment-head a .feather-check {
+    color: lightblue;
+    margin-left: 0.2rem;
+}
+
+div.feedTray div.post .post-comments .comment .comment-head div.date {
+    color: var(--cor-4);
+    text-align: center;
+    font-size: 0.7rem;
+    margin-right: 0.1rem;
+    width: min(21%, 4rem);
+}
+
+div.feedTray div.post .post-comments .comment div.texto {
+    max-width: 80%;
+    color: var(--cor-10);
+    margin: 0.5rem;
+    word-break: break-word;
+    font-size: 0.95rem;
+}
+
+div.feedTray div.post .post-comments .comment div.texto a {
+    color: lightblue;
+}
+
+div.feedTray div.post .post-comments .comment .feather-trash-2 {
+    position: relative;
+    right: -90%;
+    top: 0.5rem;
+    cursor: pointer;
+    height: 0rem;
+    display: inherit;
+    color: var(--cor-10);
+}
+
+div.feedTray div.post form {
+    margin: 1rem;
+    margin-top: -1rem;
+    background: var(--cor-12);
+    border: 2px solid var(--cor-9);
+    border-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+div.feedTray div.post form input {
+    color: var(--cor-10);
+    outline: none;
+}
+
+div.feedTray div.post form input[type="text"] {
+    background: var(--cor-12);
+    width: 80%;
+    height: 2rem;
+    padding-left: 0.5rem;
+    border: 2px inset var(--cor-8);
+}
+
+div.feedTray div.post form input[type="submit"] {
+    background: var(--cor-2);
+    width: 20%;
+    border: 2px outset var(--cor-8);
+}
+
+@media (max-width: 500px){
+    div.feedTray div.post form input[type="text"] {
+        width: 70%;
+    }
+    div.feedTray div.post form input[type="submit"] {
+        width: 30%;
+    }
+}

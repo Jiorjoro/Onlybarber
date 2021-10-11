@@ -1,0 +1,198 @@
+div#body {
+    margin: 0rem;
+    left: 0rem;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+div.config {
+    margin-bottom: 15rem;
+}
+
+form.image {
+    position: relative;
+    top: 6rem;
+    left: 50vw;
+    transform: translate(-50%);
+    width: min(85vw, 30rem);
+    height: auto;
+    background: var(--cor-2);
+    border: 3px solid var(--cor-9);
+    border-radius: 0.6rem;
+    color: var(--cor-10);
+}
+
+form.image div.botoes {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 1rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+form.image div label i.feather-paperclip {
+    background: var(--cor-12);
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    margin-right: min(1.5vw, 1rem);
+    border: 1px solid var(--cor-3);
+}
+
+form.image input[type="file"] {
+    display: none;
+}
+
+form.image input[type="submit"] {
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    border: 1px solid var(--cor-11);
+    border-radius: 0.3rem;
+    margin-top: -0.6rem;
+    margin-bottom: 1rem;
+    background: var(--cor-12);
+    outline: none;
+    color: var(--cor-10);
+}
+
+form.image div.erro {
+    width: 90%;
+    margin-bottom: 1rem;
+    text-align: end;
+    color: orangered;
+    font-size: 1.1rem;
+}
+
+form.bio {
+    position: relative;
+    top: 7rem;
+    left: 50vw;
+    transform: translate(-50%);
+    width: min(85vw, 30rem);
+    height: auto;
+    background: var(--cor-2);
+    border: 3px solid var(--cor-9);
+    border-radius: 0.6rem;
+    color: var(--cor-10);
+}
+
+form.bio textarea, 
+form.bio input {
+    background: var(--cor-12);
+    outline: none;
+    color: var(--cor-10);
+}
+
+form.bio textarea {
+    width: 90%;
+    height: 6rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 1rem;
+    margin-top: 0.8rem;
+    border: 1px solid var(--cor-3);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    display: block;
+}
+
+form.bio input[type="submit"] {
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    border: 1px solid var(--cor-11);
+    border-radius: 0.3rem;
+    margin-top: -0.6rem;
+    margin-bottom: 1rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+form.password {
+    position: relative;
+    top: 8rem;
+    left: 50vw;
+    transform: translate(-50%);
+    width: min(85vw, 30rem);
+    height: auto;
+    background: var(--cor-2);
+    border: 3px solid var(--cor-9);
+    border-radius: 0.6rem;
+    padding-top: 1rem;
+    color: var(--cor-10);
+}
+
+form.password input {
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    background: var(--cor-12);
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    box-sizing: border-box;
+    color: var(--cor-10);
+}
+
+form.password input:focus {
+    border-color: var(--cor-1);
+    outline: none;
+}
+
+form.password input[type="submit"] {
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    border: 1px solid var(--cor-11);
+    border-radius: 0.3rem;
+    margin-top: -0.6rem;
+    margin-bottom: 1rem;
+    width: auto;
+    height: auto;
+}
+
+form.password div.erro {
+    width: 90%;
+    margin-bottom: 1rem;
+    text-align: end;
+    color: orangered;
+    font-size: 1.1rem;
+}
+
+form.delete {
+    position: relative;
+    top: 9rem;
+    left: 50vw;
+    transform: translate(-50%);
+    width: min(85vw, 30rem);
+    height: auto;
+    background: var(--cor-11);
+    border: 3px solid var(--cor-11);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: var(--cor-10);
+    display: flex;
+    flex-direction: column;
+}
+
+form.delete input[type="submit"] {
+    padding: 0.6rem 0rem 0.6rem 0rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: auto;
+    height: auto;
+    background: red;
+    color: var(--cor-10);
+}
+
+@media (min-width: 800px) {
+    form.delete {
+        flex-direction: row;
+        align-items: center;
+    }
+    form.delete input[type="submit"] {
+        padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+        margin-left: 0.5rem;
+    }
+}

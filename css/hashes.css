@@ -1,0 +1,76 @@
+div.hashes {
+    position: relative;
+    top: 11.5rem;
+    left: 50vw;
+    transform: translate(-50%);
+    width: min(85vw, 30rem);
+    background: var(--cor-3);
+    border: 3px solid var(--cor-7);
+    border-radius: 0.6rem;
+    color: var(--cor-10);
+}
+
+@media (min-width: 800px) {
+    div.hashes {
+        top: min(17vw, 5rem);
+        left: min(35vw, 16.7rem);
+        transform: unset;
+        width: min(60vw, 35rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    div.hashes {
+        left: 50vw;
+        transform: translate(-50%);
+        width: min(45vw, 40rem);
+    }
+}
+
+table.title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+div.hashes form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+div.hashes form input {
+    background: var(--cor-12);
+    border: 1px solid var(--cor-11);
+    color: var(--cor-10);
+    text-align: center;
+    height: 2rem;
+}
+
+div.hashes form input.position {
+    width: 20%;
+}
+
+div.hashes form input.uses {
+    width: 20%;
+}
+
+div.hashes form input.tag {
+    width: 60%;
+}
+
+div.hashes form:first-child input.position {
+    border-radius: 0.4rem 0rem 0rem 0rem;
+}
+
+div.hashes form:last-child input.position {
+    border-radius: 0rem 0rem 0rem 0.4rem;
+}
+
+div.hashes form:first-child input.tag {
+    border-radius: 0rem 0.4rem 0rem 0rem;
+}
+
+div.hashes form:last-child input.tag {
+    border-radius: 0rem 0rem 0.4rem 0rem;
+}

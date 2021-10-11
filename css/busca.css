@@ -1,0 +1,79 @@
+form.search {
+    position: relative;
+    top: 11.5rem;
+    left: 50vw;
+    transform: translate(-50%);
+    width: min(85vw, 30rem);
+    background: var(--cor-2);
+    border: 3px solid var(--cor-9);
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    color: var(--cor-10);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+form.search input, 
+form.search select {
+    background: var(--cor-12);
+    outline: none;
+    color: var(--cor-10);
+    border: 1px solid var(--cor-9);
+    height: 2rem;
+}
+
+form.search input[type="search"] {
+    padding-left: 0.5rem;
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    form.search {
+        top: min(17vw, 5rem);
+        left: min(35vw, 16.7rem);
+        transform: unset;
+        width: min(60vw, 35rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    form.search {
+        left: 50vw;
+        transform: translate(-50%);
+        width: min(45vw, 40rem);
+    }
+}
+
+div.feedTray div.prof-search {
+    position: relative;
+    width: 100%;
+    background: var(--cor-2);
+    border: 2px solid var(--cor-9);
+    border-radius: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+div.feedTray div.prof-search img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid var(--cor-9);
+    border-radius: 2.5rem;
+    margin: 0.5rem;
+}
+
+div.feedTray div.prof-search div.nome {
+    max-width: 80%;
+    font-size: 1.2rem;
+    text-align: left;
+    word-break: break-word;
+    color: var(--cor-10);
+}

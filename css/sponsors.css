@@ -1,0 +1,64 @@
+div.sponsorsTray {
+    position: relative;
+    top: 11.5rem;
+    left: 50vw;
+    transform: translate(-50%);
+    width: min(85vw, 30rem);
+    color: var(--cor-10);
+    margin-bottom: 10rem;
+}
+
+div.sponsorsTray div.sponsor {
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--cor-3);
+    border: 3px solid var(--cor-7);
+    border-radius: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+div.sponsorsTray div.sponsor-head {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.sponsorsTray div.sponsor-head img {
+    max-width: 6rem;
+    max-height: 6rem;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid var(--cor-7);
+    border-radius: 3rem;
+    margin: 0.5rem;
+}
+
+div.sponsorsTray div.sponsor-head div.nome {
+    font-size: 1.4rem;
+    word-break: break-word;
+    margin-left: 0.5rem;
+}
+
+div.sponsorsTray div.sponsor-bio {
+    margin: 1.5rem;
+    word-break: break-word;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 800px) {
+    div.sponsorsTray {
+        top: min(17vw, 5rem);
+        left: min(35vw, 16.7rem);
+        transform: unset;
+        width: min(60vw, 35rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    div.sponsorsTray {
+        left: 50vw;
+        transform: translate(-50%);
+        width: min(45vw, 40rem);
+    }
+}

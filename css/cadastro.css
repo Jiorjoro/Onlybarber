@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.singinArea {
+    position: relative;
+    top: 3rem;
+    right: 0vw;
+    width: min(82vw, 40rem);
+    background: var(--cor-3);
+    color: var(--cor-10);
+    border: 1px solid var(--cor-2);
+    min-height: 15rem;
+    height: auto;
+}
+
+.singinArea img {
+    display: inline-block;
+    width: min(40%, 12rem);
+    margin: -0.5rem 0 -2rem 0;
+}
+
+.singinArea form {
+    width: 80%;
+    margin: 1.3rem 10% 0% 10%;
+    color: var(--cor-10);
+}
+
+.singinArea form input {
+    width: 100%;
+    margin-bottom: 1rem;
+    background: var(--cor-2);
+    height: 1.5rem;
+    border-radius: 5px;
+    color: var(--cor-10);
+}
+
+.singinArea form i[class="feather-at-sign"] {
+    position: relative;
+    left: 0.4rem;
+    top: 1.6rem;
+}
+
+.singinArea form input[name="email"] {
+    margin-bottom: 0rem;
+}
+
+.singinArea form input[name="userName"] {
+    width: 101.7%;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    height: 2rem;
+}
+
+.singinArea form input[name="senhaConf"] {
+    margin-bottom: 1.5rem;
+}
+
+.singinArea form i[class="feather-paperclip"] {
+    background: var(--cor-2);
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-left: 0.3em;
+    margin-right: 0.5em;
+}
+
+.singinArea form input[type="file"] {
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+    z-index: -5;
+}
+
+.singinArea form lable.terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.singinArea form lable.terms input {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    accent-color: var(--cor-12);
+}
+
+.singinArea form div {
+    text-align: center;
+    font-size: 1.2em;
+    color: orangered;
+    margin-top: 1rem;
+}
+
+.singinArea form input[type="submit"] {
+    margin: 1.5rem 0rem 0.3rem 0rem;
+    width: min(45%, 10rem);
+    height: auto;
+    padding: 0.6rem 0rem 0.6rem 0rem;
+    color: var(--cor-10);
+}
+
+.singinArea form input:focus {
+    border-color: black;
+    outline: none;
+}
+
+.singinArea div:last-child {
+    text-align: center;
+    margin-bottom: 2rem;
+}
